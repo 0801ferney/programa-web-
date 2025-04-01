@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dadactic language</title>
+    <style>
+        body {
+            background-image: url('imagenes/a.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .input-box, .gender-box {
+            margin-bottom: 15px;
+        }
+        .input-box input, .gender-box input {
+            width: calc(100% - 30px);
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .gender-box h3 {
+            margin-bottom: 10px;
+        }
+        .gender-option {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <header>Registrarse</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Nombre Completo</label>
+                <input type="text" placeholder="Ingresa tu nombre completo" required>
+            </div>
+            <div class="input-box">
+                <label>Correo Electrónico</label>
+                <input type="email" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+            <div class="input-box">
+                <label>Número de Teléfono</label>
+                <input type="number" placeholder="Ingresa tu número de teléfono" required>
+            </div>
+            <div class="input-box">
+                <label>Fecha de Nacimiento</label>
+                <input type="date" placeholder="Ingresa tu fecha de nacimiento" required>
+            </div>
+            <div class="gender-box">
+                <h3>Género</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked>
+                        <label for="check-male">Hombre</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender">
+                        <label for="check-female">Mujer</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender">
+                        <label for="check-other">Otro</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Contraseña</label>
+                <input type="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+            <div class="input-box">
+                <input type="submit" value="Registrarse">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dadactic language</title>
+    <style>
+        body {
+            background-image: url('imagenes/a.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+        .input-feid, .input-field, .bottom {
+            margin-bottom: 15px;
+        }
+        .input-feid input, .input-field input {
+            width: calc(100% - 30px);
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .input-feid i, .input-field i {
+            vertical-align: middle;
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+        .register {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="tip-header">
+                <span></span>
+                <header>iniciar sesion</header>
+            </div>
+
+            <form id="loginForm">
+                <div class="input-feid">
+                    <input type="text" class="input" placeholder="usuario" required>
+                    <i class="bx bx-user"></i>
+                </div>
+                
+                <div class="input-feid">
+                    <input type="password" class="input" placeholder="contraseña" required>
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-field">
+                    <input type="submit" class="submit" value="inicio">
+                </div>
+
+                <div class="bottom">
+                    <div class="left">
+                        <input type="checkbox" id="check">
+                        <label for="check">recordarme</label>
+                    </div>
+                    <div class="reght">
+                        <label><a href="#">¿olvidaste la contraseña?</a></label>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="register">
+                <label><a href="registro.html">¿No tienes una cuenta? Regístrate</a></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
